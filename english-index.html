@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn Math</title>
+    <link rel="icon" href="./assets/img/logo-tab.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assets/css/grid.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/index.css">
+</head>
+<body>
+    <div class="wrap">
+        <div class="grid wide">
+            <div class="row">
+                <div class="col l-6 l-o-3 m-8 m-o-2 c-12">
+                    <!-- Signin -->
+                    <div id="signin-form" class="inner">
+                        <div class="inner__heading">
+                            Welcome to <br/><span class="inner__heading-color"> Learn Math For Student</span>
+                        </div>
+
+                        <div class="inner__body">
+                            <div class="inner__body-box">
+                                <input type="text" id="signin-form-username" placeholder="Username">
+                            </div>
+                            <div class="inner__body-box">
+                                <input type="password" id="signin-form-password" placeholder="Password">
+                            </div>
+                            <small class="inner__alert"></small>
+                            <button class="inner__body-btn">Sign In</button>
+                            <small class="inner__turn">
+                                Don't have account? <span id="turn-signup">Sign Up</span>
+                            </small>
+                            <small class="inner__line">-------------------- or ---------------------</small>
+                            <div class="inner__media">
+                                <div class="inner__media-item">
+                                    <img class="inner__media-item-icon" src="https://img.icons8.com/color/48/000000/facebook-new.png"/>
+                                    Login with Facebook
+                                </div>
+                                <div class="inner__media-item">
+                                    <img class="inner__media-item-icon" src="https://img.icons8.com/color/48/000000/google-logo.png"/>
+                                    Login with Google
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Signup -->
+                    <div id="signup-form" class="inner">
+                        <div class="inner__heading">
+                            Welcome to <br/><span class="inner__heading-color"> Learn Math For Student</span>
+                        </div>
+
+                        <div class="inner__body">
+                            <div class="inner__body-box">
+                                <input type="text" id="signup-form-username" placeholder="Username">
+                            </div>
+                            <div class="inner__body-box">
+                                <input type="password" id="signup-form-password" placeholder="Password">
+                            </div>
+                            <div class="inner__body-box">
+                                <input type="password" id="signup-form-confirm-password" placeholder="Confirm Pasword">
+                            </div>
+                            <small class="inner__alert"></small>
+                            <button class="inner__body-btn">Sign Up</button>
+                            <small class="inner__turn">
+                                Already have an account? <span id="turn-signin">Sign In</span>
+                            </small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="language">
+                <i class="fa-solid fa-globe language__icon"></i>
+                Choose language
+                <i class="fa-solid fa-angle-down language__icon-drop"></i>
+                <ul class="language__list">
+                    <li class="language__list-item"><a href="./index.html">Vietnamese</a></li>
+                    <li class="language__list-item"><a href="./english-index.html">English</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./assets/js/index.js"></script>
+<script src="./assets/database/data.js"></script>
+</html>
