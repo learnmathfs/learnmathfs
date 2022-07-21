@@ -28,3 +28,11 @@ html {
     font-weight: 800;
     color: var(--primary-color);
 }
+@keyframes showIn {
+    from {
+        transform: scale(0.7);
+    }
+    to {
+        transform: scale(1);
+    }
+}
