@@ -1,4 +1,4 @@
-let lessons = [
+const lessons = [
     {
         id: 1,
         title: "Bài 1",
