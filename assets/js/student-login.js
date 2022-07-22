@@ -7,8 +7,6 @@ var passwordInput = document.querySelector('#signin-form-password');
 var signinForm = document.querySelector('#signin-form');
 var signupForm = document.querySelector('#signup-form');
 
-const accArray = JSON.parse(localStorage.getItem('accounts'));
-
 // Main Function
 function start() {
     loadData();
@@ -34,9 +32,10 @@ function loadData() {
 // Check existing of accounts function
 function isExist(userName, password) {
     let accounts = JSON.parse(localStorage.getItem('accounts'));
-    accounts.forEach(account => {
-        if (userName === account.userName && password === account.password && account.role === 'student') { return true; }
-    });
+    console.log(accounts);
+    for (var i = 0; i < accounts.length; i++) {
+        if ((userName === accounts[i].userName) && (password === accounts[i].password) && (accounts[i].role === 'student')) return true;
+    }
     return false;
 }
 // Check empty username or password
@@ -47,12 +46,13 @@ function isEmpty() {
 // Check validation of accounts and login
 function signIn() {
     document.querySelector('#signin').addEventListener('click', function (e) {
-        if (isEmpty()) {
+        if (isEmpty() || isExist(userNameInput.value, passwordInput.value) === false) {
             e.preventDefault();
-            document.querySelector('.inner__alert').innerText = 'Vui lòng nhập đầy đủ thông tin';
-        } else if (isExist(userNameInput.value, passwordInput.value) === false) {
-            e.preventDefault();
-            document.querySelector('.inner__alert').innerText = 'Tên hoặc mật khẩu không chính xác';
-        }
+            if (isEmpty()) {
+                document.querySelector('.inner__alert').innerText = 'Vui lòng nhập đầy đủ thông tin';
+            } else {
+                document.querySelector('.inner__alert').innerText = 'Tài khoản không tồn tại';
+            }
+        } 
     });
 };
