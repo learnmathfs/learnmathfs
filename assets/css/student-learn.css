@@ -41,7 +41,7 @@ body {
 }
 /* --------------------- READ VIEW ---------------------- */
 .wrap {
-    position: absolute;
+    position: fixed;
     top: 0;
     right: 0;
     left: 0;
@@ -58,12 +58,13 @@ body {
     width: 1200px;
     min-height: 100px;
     margin: 24px 0;
-    font-size: 2rem;
+    font-size: 3rem;
     background-color: #fff;
     border-radius: 8px;
     padding: 24px;
     animation: showIn 0.4s;
     transition: transform;
+    overflow: auto;
 }
 
 .read-view__close {
@@ -72,6 +73,7 @@ body {
     right: 12px;
     padding: 12px;
     border-radius: 50%;
+    font-size: 3rem;
     cursor: pointer;
 }
 
