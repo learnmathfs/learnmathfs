@@ -29,8 +29,8 @@
                             <div class="inner__body-box">
                                 <input type="password" id="signin-form-password" placeholder="Nhập mật khẩu">
                             </div>
-                            <small class="inner__alert"></small>
-                            <button class="inner__body-btn">Đăng nhập</button>
+                            <small id="signin-alert" class="inner__alert"></small>
+                            <a href="./vietnamese-teacher-main.html" id="signin" class="inner__body-btn">Đăng nhập</a>
                             <small class="inner__turn">
                                 Chưa có tài khoản? <span id="turn-signup">Đăng ký</span>
                             </small>
@@ -61,10 +61,10 @@
                                 <input type="password" id="signup-form-password" placeholder="Nhập mật khẩu">
                             </div>
                             <div class="inner__body-box">
-                                <input type="password" id="sign-up-form-confirm-password" placeholder="Nhập lại mật khẩu">
+                                <input type="password" id="signup-form-confirm-password" placeholder="Nhập lại mật khẩu">
                             </div>
-                            <small class="inner__alert"></small>
-                            <button class="inner__body-btn">Đăng ký</button>
+                            <small id="signup-alert" class="inner__alert"></small>
+                            <button id="signup" class="inner__body-btn">Đăng ký</button>
                             <small class="inner__turn">
                                 Đã có tài khoản? <span id="turn-signin">Đăng nhập</span>
                             </small>
@@ -76,6 +76,5 @@
         </div>
     </div>
 </body>
-<script src="./assets/js/index.js"></script>
-<script src="./assets/database/data.js"></script>
+<script type="module" src="./assets/js/teacher-login.js"></script>
 </html>

@@ -1,4 +1,4 @@
-import lessons from '../database/student-learn-data.js';
+import lessons from '../database/lessons-data.js';
 
 function start() {
     render();
@@ -29,11 +29,11 @@ function render() {
     var htmls = "";
     lessons.forEach(lesson => {
         htmls += `
-            <div class="col l-3 m-4 c-6">
+            <div class="col l-3 m-6 c-12">
                 <div class="item">
                     <h1 class="item__title">${lesson.title}</h1>
                     <p class="item__content">${lesson.name}</p>
-                    <button id="${lesson.id}" class="item__btn">Đọc</button>
+                    <button data-index="${lesson.id}" class="item__btn">Đọc</button>
                 </div>
             </div>
         `;
