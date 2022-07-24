@@ -30,7 +30,7 @@ html {
 }
 
 .item--active {
-    background-color: #c0f3c3;
+    display: block !important;
 }
 @keyframes showIn {
     from {
