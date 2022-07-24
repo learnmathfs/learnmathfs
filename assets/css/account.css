@@ -157,11 +157,11 @@
     }
 
     .info__main-name {
-        font-size: 3rem;
+        font-size: 2rem;
     }
 
     .info__main-role {
-        font-size: 2rem;
+        font-size: 1.6rem;
     }
 }
 /* Tablet resolution */
